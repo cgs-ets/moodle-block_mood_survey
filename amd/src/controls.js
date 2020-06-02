@@ -86,18 +86,18 @@ define(['jquery', 'core/log', 'core/ajax'], function ($, Log, Ajax) {
             $("#answersbody").children().each(function (index) {
                 $(this).attr('data-original-title', $(this).first().text()); //Add tooltips
             });
-            
+
             this.text = 'More...';
             $(this).removeClass('survey-less');
             $(this).addClass('survey-more');
-            $(document).getElementById('inst'+self.instanceid).scrollIntoView();
+            document.getElementById("#question").scrollIntoView();
             return false;
         });
 
         // Opt out
         self.region.on('click', '.survey-opt-out', function (e) {
             e.preventDefault();
-            self.saveOptOut();//2 = opt out           
+            self.saveOptOut();//2 = opt out
         });
     };
 
@@ -119,7 +119,7 @@ define(['jquery', 'core/log', 'core/ajax'], function ($, Log, Ajax) {
                 }
             }]);
 
-    }
+    };
 
     MoodSurveyControl.prototype.saveSurveyResponse = function (option) {
         var self = this;
@@ -136,7 +136,7 @@ define(['jquery', 'core/log', 'core/ajax'], function ($, Log, Ajax) {
         // Remove tooltip
         $('body').find('.tooltip').css('display', 'none');
 
-        if (questionid == null || questiontitle == null || response == null) {
+        if (questionid === null || questiontitle === null || response === null) {
             return;
         }
 
@@ -162,7 +162,7 @@ define(['jquery', 'core/log', 'core/ajax'], function ($, Log, Ajax) {
                     Log.error(reason);
                 }
             }]);
-    }
+    };
 
     return {
         init: init
