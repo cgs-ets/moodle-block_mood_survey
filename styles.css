@@ -61,6 +61,39 @@
 
 /* Specific question CSS */
 /* How are you feeling today? */
+
+@media only screen and (min-width: 530px)  {
+    .block_markoff .survey {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 375px)  {
+    .block_mood_survey .answer .option .label {
+        background: transparent;
+        color: #000;
+        display: none;
+        font-weight: 600;
+        font-size: 73%;
+    }
+
+    .block_mood_survey [data-id="1"] .option {
+        display: inline-block;
+        text-align: left;
+        color: #000;
+        text-decoration: none;
+    }
+
+    span#lastoption {
+        float: inherit;
+    }
+
+    .mood-survey-details {
+        display: flex;
+    }
+}
+
 .block_mood_survey [data-id="1"] .option {
     display: inline-block;
     text-align: center;
