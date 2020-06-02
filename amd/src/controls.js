@@ -74,6 +74,7 @@ define(['jquery', 'core/log', 'core/ajax'], function ($, Log, Ajax) {
             this.text = 'Less...';
             $(this).addClass('survey-less');
             $(this).removeClass('survey-more');
+            return false; // To avoid the action of refreshing the page and going to the top.
         });
 
         // Display less
