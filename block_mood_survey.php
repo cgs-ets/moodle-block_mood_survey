@@ -84,9 +84,9 @@
                 return null;
             }
 
-            // If user is inpersonating another, don't show the block.
+            // If user is impersonating another, don't show the block.
             if (\core\session\manager::is_loggedinas()) {
-                //return null;
+                return null;
             }
 
             // Only continue processing and display block if user is a student or staff.
