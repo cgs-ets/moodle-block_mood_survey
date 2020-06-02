@@ -79,22 +79,25 @@ define(['jquery', 'core/log', 'core/ajax'], function ($, Log, Ajax) {
 
         // Display less
         self.region.on('click', '.survey-less', function (e) {
+            $("#answersbody").css('text-align', 'center');
             ($("#answersbody").find('.help')).css('display', 'none');
             ($("#answersbody").find('span')).css('display', 'none');
 
             $("#answersbody").children().each(function (index) {
                 $(this).attr('data-original-title', $(this).first().text()); //Add tooltips
             });
+            
             this.text = 'More...';
             $(this).removeClass('survey-less');
             $(this).addClass('survey-more');
+            $(document).getElementById('inst'+self.instanceid).scrollIntoView();
+            return false;
         });
 
         // Opt out
         self.region.on('click', '.survey-opt-out', function (e) {
             e.preventDefault();
-            self.saveOptOut();//2 = opt out
-           // self.region.remove();
+            self.saveOptOut();//2 = opt out           
         });
     };
 
