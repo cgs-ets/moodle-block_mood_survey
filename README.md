@@ -1,1 +1,3 @@
-# moode-block_mood_survey
+# moodle-block_mood_survey
+
+ Based on the Markoff block
