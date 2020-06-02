@@ -90,7 +90,7 @@ define(['jquery', 'core/log', 'core/ajax'], function ($, Log, Ajax) {
             this.text = 'More...';
             $(this).removeClass('survey-less');
             $(this).addClass('survey-more');
-            document.getElementById("#question").scrollIntoView();
+            document.getElementById("question").scrollIntoView();
             return false;
         });
 
