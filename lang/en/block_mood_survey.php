@@ -32,4 +32,4 @@ $string['questionbody'] = 'Question Body';
 $string['reason'] = 'Reason for the survey';
 $string['surveycomplete'] = '<h2>Thank you for completing the survey</h2>';
 $string['optoutdesc'] = 'User opted out survey';
-$string['daytodisplay'] = 'Day to display survey (Mon-Sun)';
+$string['daytodisplay'] = 'Day to display survey';

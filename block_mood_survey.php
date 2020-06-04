@@ -79,8 +79,8 @@
 
             // Check the day to display the survey
 
-           // var_dump(date('D',time())); exit;
-            if(date('D',time()) != $this->config->displayday){
+           // var_dump(date('w',time())); exit;
+            if(date('w',time()) != $this->config->displayday){
                 return null;
             }
 
@@ -112,7 +112,7 @@
                 $USER->username,
                 $surveyday,
             );
-           
+
             $record = $DB->get_record_sql($sql, $params);
 
             if($record) {

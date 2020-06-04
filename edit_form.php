@@ -60,9 +60,9 @@ class block_mood_survey_edit_form extends block_edit_form {
         $mform->addElement('textarea', 'config_reason', get_string('reason', 'block_mood_survey'), 'wrap="virtual" rows="4" cols="50"');
         $mform->setType('config_reason', PARAM_TEXT);
 
-        $mform->addElement('text', 'config_displayday', get_string('daytodisplay', 'block_mood_survey'));
+        $mform->addElement('select', 'config_displayday', get_string('daytodisplay', 'block_mood_survey'),
+            array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday','Friday', 'Saturday'));
         $mform->setType('config_displayday', PARAM_TEXT);
-
     }
 
     /**
