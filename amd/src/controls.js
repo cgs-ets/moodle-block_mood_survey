@@ -94,6 +94,11 @@ define(['jquery', 'core/log', 'core/ajax'], function ($, Log, Ajax) {
             return false;
         });
 
+        self.region.on('click', '.why-ask', function (e) {                          
+            return false;
+        });
+
+     
         // Opt out
         self.region.on('click', '.survey-opt-out', function (e) {
             e.preventDefault();
