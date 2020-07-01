@@ -24,7 +24,7 @@ git clone https://github.com/cgs-ets/moodle-block_mood_survey.git mood_survey
 Open the administration area (http://your-moodle-site/admin) to start the installation automatically.
 
 ## Configuraiton
-Open the  block's configuration form and  write the html code for your survey.\
+Open the  block's configuration form and  write the html code for your survey.
 
 Here is an example :
 
